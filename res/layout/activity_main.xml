@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wyliodrin.halloween.MainActivity" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Jack-o'-lantern says:" />
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pumpkinline"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Jack-o'-lantern lights:" />
+     <TextView
+        android:layout_width="65dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/color"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        />
+     <TableLayout 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:id="@+id/color_table"
+         android:layout_gravity="center_horizontal">         
+        <!--  <TableRow 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:padding="10dp">
+             <Button 
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:background="#ff0000"/>
+         </TableRow>-->
+     </TableLayout>
+     
+     <Button
+         android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:onClick="animate"
+		 android:text="Animate!"
+		 android:layout_gravity="center_horizontal"
+         />
+
+</LinearLayout>
